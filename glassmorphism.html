@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container {
+      position: relative;
+      width: 300px;
+      height: 100px;
+      overflow: hidden;
+    }
+
+    .text {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 24px;
+      z-index: 2;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .line {
+      position: absolute;
+      bottom: 0;
+      left: -100%;
+      width: 100%;
+      height: 4px; /* Толщина линии */
+      background-color: #3498db;
+      transition: left 1s ease, height 1s ease 1s; /* Анимация высоты начинается через 1с */
+      z-index: 1;
+    }
+
+    /* Класс анимации */
+    .animate .line {
+      left: 0; /* Линия двигается справа налево */
+      height: 100%; /* Увеличение высоты */
+    }
+
+    .animate .text {
+     /* Скрытие текста */
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="text">Hello, World!</div>
+  <div class="line"></div>
+</div>
+<script>
+  setTimeout(() => {
+    document.querySelector('.container').classList.add('animate');
+  }, 2000);
+</script>
+</body>
+</html>
+

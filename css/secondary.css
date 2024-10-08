@@ -1,0 +1,320 @@
+/*:root {  css variable
+    --red: red;
+    --back_blue: blue;
+    --width: 350px;
+    --height: 100px;
+    --flex: block;
+    --jc: center;
+    --alignI: center;
+    --borderR: 25px;
+    --Weight: 1000;
+    --size: 20px;
+
+
+}
+
+
+p::before {
+    content: '';
+    height: 5px;
+    width: 115px;
+    background-color: #0b5aee;
+    display: block;
+
+
+}
+p::after {
+    content: '';
+    height: 5px;
+    width: 115px;
+    background-color: #ffe000;
+    display: block;
+
+
+}
+
+
+p {  // css variable appending to properties some values in view of variable
+    color: var(--red);
+
+    background-color: var(--back_blue);
+    width: var(--width);
+    height: var(--height);
+    display: var(--flex);
+
+    justify-content: var(--jc);
+    align-items: var(--alignI);
+    border-radius: var(--borderR);
+    font-weight: var(--Weight);
+    font-size: var(--size);
+
+}
+*/
+.header {
+
+}
+.main {
+    animation: move-in 800ms;
+}
+
+@keyframes move-in {
+    0% {
+        transform: translateY(-25px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+.footer-div p {
+    transition: color 300ms ease;
+}
+.footer-div p:hover {
+    color: #000000;
+}
+.icon-pop-out {
+    animation-name: fadeInAndMove;
+    animation-duration: 600ms;
+}
+
+@keyframes fadeInAndMove {
+    0% {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.entire-elements {
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.inputs input:focus {
+    background-color: #f4f4f4;
+}
+.engage-button {
+    position: relative;
+    color: white;
+}
+.engage-button span {
+    color: white;
+}
+.diver p {
+    transition: color 1s ease;
+}
+.diver p:hover {
+    color: #d3d3d3;
+
+}
+.engage-button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    color: white;
+    background-color: #d60d0d;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition: transform 0.5s cubic-bezier(0.9, 0.9, 0.9, 0.9);
+
+}
+.engage-button:hover.text-button {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: #ffffff;
+
+}
+
+.engage-button:hover::before {
+    transform: scaleX(1);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+.engage-button:hover {
+    color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+
+
+
+.button {
+    background: #00a6ff;
+    transition: background-color 500ms ease;
+}
+.button:hover {
+    background: #18b7ff;
+}
+
+.a::after {
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: #85dbff;
+    margin-top: 5px;
+    display: block;
+}
+* {
+    font-family: sans-serif;
+    color: #494646;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+.h1 {
+    margin-bottom: 50px;
+
+}
+.h1::after {
+    content: '';
+
+    width: 50px;
+    height: 3px;
+    margin-top: 10px;
+    background-color: #12bbff;
+
+    display: block;
+    position: absolute;
+    right: 48.81%;
+
+
+}
+@media (max-width: 1445px) {
+    .h1::after {
+        content: '';
+
+        width: 50px;
+        height: 3px;
+        margin-top: 10px;
+        background-color: #12bbff;
+        right: 31.76%;
+        display: block;
+        position: absolute;
+
+
+
+    }
+}
+.all {
+    background: linear-gradient(black, white);
+    width: 1900px; height: 900px; display: flex
+}
+.all-content {
+    width: 1200px;  height: 800px;
+}
+.header {
+    width: 1200px;   height: 100px;
+}
+.main {
+    width: 1200px; background: white; height: 1000px;  border-top-left-radius: 55px;  border-top-right-radius: 55px
+}
+.main-details {
+    height: 400px; width: 1200px; display: flex
+}
+.main-auth {
+    width: 450px; padding: 55px
+}
+.imgs {
+    width: 743px; height: 400px; margin: 0; padding: 0; display: flex; overflow: hidden ; border-top-right-radius: 55px
+}
+
+.image {
+    height: 400px; width: 343px; margin: 0; padding: 0;
+}
+.image-1 {
+    height: 400px; width: 337px; margin: 0; padding: 0;  border-top-right-radius: 25px;
+}
+
+@media (max-width: 1026px) {
+
+
+    .h1::after {
+        content: '';
+
+        width: 50px;
+        height: 3px;
+        margin-top: 10px;
+        background-color: #12bbff;
+        right: 4.2%;
+        display: block;
+        position: absolute;
+
+
+
+    }
+
+}
+@media (max-width: 785px) {
+    .h1::after {
+        content: '';
+
+        width: 50px;
+        height: 3px;
+        margin-top: 10px;
+        background-color: #12bbff;
+        display: none;
+        position: absolute;
+
+
+
+    }
+    .imgs {
+        display: none;
+    }
+    .entire-elements {
+        display: none;
+    }
+
+}
+
+body {
+    position: relative;
+    margin: 0;
+}
+.pre-all {
+    width: 350px; height: 800px;
+}
+
+
+
+
+@media (max-width: 426px) {
+    .h1::after {
+        content: '';
+
+        width: 50px;
+        height: 3px;
+        margin-top: 10px;
+        background-color: #12bbff;
+        display: none;
+        position: absolute;
+
+
+
+    }
+
+    html {
+        max-width: 1000px;
+    }
+
+
+
+}

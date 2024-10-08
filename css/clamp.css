@@ -1,0 +1,7 @@
+.container-test-clamp {
+
+}
+.container-test-clamp p {
+    font-size: clamp(15px, 60px, 30px);
+
+}

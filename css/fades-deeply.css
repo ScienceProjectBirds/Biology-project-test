@@ -1,0 +1,10 @@
+.fade-in {
+    opacity: 0; /* Изначально скрыты */
+    transform: translateY(20px); /* Немного сдвинем элемент для эффекта */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Переход для плавного появления */
+}
+
+.fade-in.visible {
+    opacity: 1; /* Полная видимость */
+    transform: translateY(0); /* Возвращение на исходное место */
+}

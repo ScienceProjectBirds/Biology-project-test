@@ -1,0 +1,32 @@
+/* Стиль для текста, на который наводится мышь */
+.hover-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* Контейнер для меню */
+.menu-container {
+    width: 200px;
+    height: 0;
+    overflow: hidden; /* Скрываем пункты меню, пока контейнер закрыт */
+    background-color: lightgray;
+    transition: height 0.5s ease; /* Анимация высоты контейнера */
+    border: 1px solid gray;
+}
+
+/* Пункты меню */
+.menu-item {
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Анимация появления пунктов */
+}
+
+/* Когда контейнер активен, увеличиваем его высоту и делаем видимыми элементы */
+.menu-container.active {
+    height: 100px; /* Высота контейнера при открытии */
+}
+
+.menu-container.active .menu-item {
+    opacity: 1; /* Пункты становятся видимыми */
+}

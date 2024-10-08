@@ -1,0 +1,157 @@
+.button-fly {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 30px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    width: 220px;
+    height: 100px;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    line-height: 1.2;
+    font-family: Arial, sans-serif;
+    transition: border-color 0.3s, color 0.3s;
+
+}
+
+
+.button-fly:hover {
+    border-color: #333;
+    color: #333;
+}
+
+.button-fly span {
+
+    width: 100%;
+
+
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.button-fly .text-old {
+    opacity: 1;
+}
+
+.button-fly .text-new {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.button-fly:hover .text-old {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.button-fly:hover .text-new {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button-fly-mine {
+    text-align: center;
+    font-size: 21px;
+    color: #000000;
+    background-color: transparent;
+    padding: 18px;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 2px solid #323232;
+    box-shadow: 2px 2px 5px black;
+    line-height: 1.2;
+    transition: border-color 0.3s, color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.button-fly-mine:hover {
+    border: 2px solid #0c0c0c;
+    box-shadow: 2px 2px 15px black;
+}
+.newly-text {
+    display: none;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.old-text {
+    opacity: 0;
+}
+
+
+.button-fly-mine:hover .old-text {
+    transform: translateY(30px);
+    color: black;
+    opacity: 0;
+}
+.button-fly-mine:hover .newly-text{
+    transform: translateY(0);
+    display: block;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+.nums {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 215;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.nums::before {
+    position: absolute;
+    top: 3px;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    z-index: 21;
+    content: '';
+    background: #0a56e4;
+    width: 12px;
+    height: 31px;
+
+}
+
+
+
+
+
+
+
+
+

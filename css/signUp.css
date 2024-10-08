@@ -1,0 +1,335 @@
+.h1 span {
+    margin: 0;
+}
+.h1 {
+    width: 200px;
+    color: #2e2e2e;
+    display: flex;
+}
+.character_starling {
+    background: #00a6ff;
+    transition: background 400ms ease;
+}
+.character_starling:hover {
+    background: #33bfff;
+    cursor: pointer;
+}
+.character_nightingale {
+    background: #00ff2a;
+    transition: background 400ms ease;
+}
+.character_nightingale:hover {
+    background: #32ff58;
+    cursor: pointer;
+}
+.character_raven {
+    background: #ceff00;
+    transition: background 400ms ease;
+}
+.character_raven:hover {
+    background: #e2fd6f;
+    cursor: pointer;
+}
+.character_magpie {
+    background: #ff4e00;
+    transition: background 400ms ease;
+}
+.character_magpie:hover {
+    background: #ff6e2f;
+    cursor: pointer;
+}
+.character_makeSnowBird {
+    background: #ff0000;
+    transition: background 400ms ease;
+}
+.character_makeSnowBird:hover {
+    background: #ff3939;
+    cursor: pointer;
+}
+.js-character-bird.border {
+    border-color: #ffffff;
+}
+.js-character-bird {
+    border: 5px solid transparent;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+
+.tick {
+    transition: opacity 1s ease;
+}
+.tick2 {
+    transition: opacity 1s ease;
+
+}
+.cross {
+    transition: opacity 1s ease;
+    background: transparent;
+}
+.cross2 {
+    transition: opacity 1s ease;
+    background: transparent;
+
+}
+.rainboww {
+    animation: rainb 7s ease infinite;
+}
+.down-stripe-left {
+    width: 5px; background: red; height: 0px; color: red; position: absolute; top: 550px; left: 669px;
+}
+.down-stripe-right {
+    width: 5px; background: red; height: 0px; color: red; position: absolute; top: 550px; right: 669px;
+}
+.down-stripe-left-strecher {
+    width: 300px; background: red; height: 3px; color: red; position: absolute; top: 550px; left: 669px;
+    transition: width 2s ease;
+}
+.down-stripe-right-strecher {
+    width: 300px; background: red; height: 3px; color: red; position: absolute; top: 550px; right: 669px;
+    transition: width 2s ease;
+}
+
+
+.stripe {
+    width: 0px; background: red; height: 3px; color: red; position: absolute; top: 400px;
+}
+.strecher {
+    transition: width 2s ease;
+    width: 550px;
+    background: red; height: 3px; color: red;
+    position: absolute; top: 400px;
+}
+
+.sidewayleft {
+    width: 3px;
+    height: 0px;
+    background: red; margin-right: 547px;
+    position: absolute; top: 400px;
+
+}
+.sideway2left {
+    transition: height 2s ease;
+    width: 3px;
+    height: 75px;
+    background: red; margin-right: 547px;
+    position: absolute; top: 400px;
+}
+.sideway3left {
+    transition: height 2s ease;
+    width: 3px;
+    height: 150px;
+    background: red; margin-right: 547px;
+    position: absolute; top: 400px;
+}
+
+
+
+.sidewayright {
+    width: 3px;
+    height: 0px;
+    background: red; margin-left: 547px;
+    position: absolute; top: 400px;
+
+}
+.sideway2right {
+    transition: height 2s ease;
+    width: 3px;
+    height: 75px;
+    background: red; margin-left: 547px;
+    position: absolute; top: 400px;
+}
+.sideway3right {
+    transition: height 2s ease;
+    width: 3px;
+    height: 150px;
+    background: red; margin-left: 547px;
+    position: absolute; top: 400px;
+}
+
+#first-quat , .second-quat, #display-button {
+    transition: opacity 1.3s ease;
+}
+@keyframes rainb {
+    0% {
+        color: #000000;
+    }
+    20% {
+        color: #ffde00;
+    }
+    40% {
+        color: #79ff00;
+    }
+    60% {
+        color: #00ff75;
+    }
+    80% {
+        color: #ff0000;
+    }
+    100% {
+        color: #000000;
+    }
+}
+.buttoned2 {
+    cursor: pointer;width: 100px; height: 40px; border-radius: 20px; border: none;
+    transition: background-color 800ms ease;
+}
+.buttoned2:hover {
+    background-color: #a6a6a6;
+}
+.buttoned1 {
+    cursor: pointer;width: 100px; outline: none; border-radius: 20px; height: 40px; border: none;
+    transition: background-color 800ms ease;
+}
+.buttoned1:hover {
+    background-color: #bcbcbc;
+}
+
+.buttonon {
+    transition: color 0.5s cubic-bezier(0.9, 0.9, 0.9, 0.9);
+    position: relative;
+    color: black;
+
+}
+.buttonon::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+background-color: white;
+    color: #000000;
+    border: #000000 2px solid;
+    border-radius: 25px;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.5s cubic-bezier(0.9, 0.9, 0.9, 0.9) ;
+}
+.buttonon:hover.texton {
+    border: #000000 2px solid;
+    color: #000000;
+
+}
+.buttonon:hover::before {
+    transform: scaleX(1);
+    border-radius: 25px;
+    color: black;
+}
+.buttonon:hover {
+    color: #000000;
+    border-radius: 5px;
+}
+
+
+.ball {
+
+    animation: shiver 5s infinite ;
+}
+@keyframes shiver {
+    0% { transform: translate(3px, 3px) rotate(0deg); }
+    10% { transform: translate(-4px, -2px) rotate(-1deg); }
+    20% { transform: translate(-5px, 0px) rotate(1deg); }
+    30% { transform: translate(6px, 4px) rotate(0deg); }
+    40% { transform: translate(7px, -7px) rotate(1deg); }
+    50% { transform: translate(-5px, 5px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+
+
+
+}
+
+
+
+.main-deduce {
+    animation: MainText 4s linear    ;
+
+
+    background: linear-gradient(#000, #000);
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+@media (max-width: 853px)  {
+    
+}
+@keyframes MainText {
+    0% {
+        background-size: 10%;
+        opacity: 1
+    }
+    50% {
+        background-size: 50%;
+    }
+    100% {
+        background-size: 100%;
+    }
+
+}
+.secondary-deduce {
+    animation: ScndText 4s linear    ;
+
+
+    background: linear-gradient(#000, #000);
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+.second-part {
+    opacity: 0;
+    animation-name: FadeIn;
+    animation-duration: 1.5s;
+
+}
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes ScndText {
+    0% {
+        background-size: 10%;
+        opacity: 1
+    }
+    50% {
+        background-size: 40%;
+    }
+    100% {
+        background-size: 100%;
+    }
+
+}
+.main-deduce::before {
+    content: 'Привествуем';
+    font-size: 10px;
+    position: absolute;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

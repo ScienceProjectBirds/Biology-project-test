@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    height: 100vh;
+    overflow: hidden; /* предотвращаем прокрутку на body */
+}
+
+.container {
+    height: 100%;
+    overflow-y: scroll; /* добавляем прокрутку */
+    padding: 20px;
+}
+
+.card {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* анимация трансформации */
+    font-size: 1.5rem; /* начальный размер текста */
+}

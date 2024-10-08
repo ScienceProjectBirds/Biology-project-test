@@ -1,0 +1,41 @@
+.charity-gr-fund {
+    width: 80%;
+    height: 50px; /* Высота поля */
+    font-size: 50px;
+    text-align: center;
+    border: 5px solid black; /* Стандартная граница */
+    outline: none;
+    position: relative;
+}
+
+/* Класс с анимированным бордером с точками */
+.dot-border {
+    position: relative;
+    border: none; /* Убираем стандартный border */
+}
+
+/* Псевдоэлемент для создания бордера с точками */
+.dot-border::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px); /* Делаем бордер шире, чем input */
+    height: calc(100% + 20px); /* Делаем бордер выше, чем input */
+    border-radius: 15px; /* Круглые углы у бордера */
+    border: 5px solid transparent;
+    background: conic-gradient(black 10%, transparent 10%) 0 / 20px 20px; /* Точки */
+    animation: rotate-dots 4s linear infinite; /* Анимация вращения */
+    box-sizing: border-box;
+    pointer-events: none; /* Чтобы не мешать вводу */
+}
+
+/* Анимация вращения точек */
+@keyframes rotate-dots {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

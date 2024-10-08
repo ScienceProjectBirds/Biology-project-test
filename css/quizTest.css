@@ -1,0 +1,209 @@
+.btn:hover {
+    background: black;
+    color: white;
+
+}
+.btn {
+    background: transparent;
+ transition: background-color 1s ease, color 1s ease;
+    cursor: pointer;
+
+    color: white;
+    width: 750px; text-align: left; padding: 13px;  border: 1px solid white; border-radius: 10px;  margin-top: 11px; margin-bottom: 11px;
+    animation: opac 2s;
+}
+.revolve {
+    animation-name: revolve_hinge;
+    animation-duration: 2s;
+}
+@keyframes revolve_hinge {
+    0% {
+        transform: translateX(-125px)
+
+    }
+ 100% {
+     transform: translateX(0px);
+ }
+
+
+
+}
+.pooo {
+    background-color: #ffffff;
+
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+}
+.pooo:hover {
+    background-color: #000000;
+
+}
+.DasHouse {
+    background-color: black;
+
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+}
+.DasHouse:hover {
+    background-color: white;
+
+
+}
+.DasHouse:hover .ffff {
+    color: #000000;
+}
+.ffff {
+    transition: color 1s ease-in-out;
+    color: black;
+}
+.ffff:hover {
+    color: white;
+}
+.ffff2 {
+    transition: color 1s ease-in-out;
+    color: white;
+}
+.ffff2:hover {
+    color: black;
+}
+
+.temp_class {
+    position: relative;
+    transition: width 2s ease;
+
+}
+.temp_class::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    background: #000000;
+    width: 1px;
+    height: 5px;
+    transition: width 2s ease;
+}
+.teextt {
+    transition: width 2s ease;
+    position: relative;
+}
+.teextt::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    background: #000000;
+    width: 251px;
+    height: 5px;
+    transition: width 2s ease;
+}
+
+.again-suit-space-1 {
+    animation: opac 2s;
+
+}
+.correct {
+    background-color: #85dd77;
+    transition: background-color 1s ease, color 1s ease;
+}
+.wrong {
+    background-color: #fa657d;
+    transition: background-color 1s ease, color 1s ease;
+}
+.again-but {
+    cursor: pointer ;padding: 13px; border-radius: 15px; background: black; border: none; color: white
+}
+.Beak {
+    animation: rainbow-2 5s ease infinite;
+
+    color: white
+}
+.post-body {
+    display: flex; justify-content: center; align-items: center;  height: 900px;
+    width: 100%
+}
+@media (max-width: 853px) {
+    .post-body {
+        width: 822px;
+        height: 1280px;
+    }
+    
+}
+
+#next-btn {
+background-color: black;
+    color: white;
+    transition: color 1.5s ease, background-color 1.5s ease;
+}
+#next-btn:hover {
+    background-color: white;
+    color: black;
+}
+.contnetik {
+    transition: opacity 1s ease;
+}
+#answer-buttons {
+    animation: opac 1s;
+}
+.bbbbb {
+    animation: opac 1s;
+}
+
+#again-btn {
+    transition: color 0.5s cubic-bezier(0.9, 0.9, 0.9, 0.9);
+    position: relative;
+}
+
+#again-btn::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+
+    background-color: #ff00c1;
+    color: white;
+    border: #00ffd0 2px solid;
+    border-radius: 20px;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.5s cubic-bezier(0.9, 0.9, 0.9, 0.9) ;
+}
+#again-btn:hover.her {
+    border: #0099ff 2px solid;
+    color: white;
+}
+#again-btn:hover::before {
+    transform: scaleX(1);
+    border-radius: 5px;
+}
+#again-btn:hover {
+    color: white;
+    border-radius: 5px;
+}
+@keyframes opac {
+
+    0% {
+        opacity: 0;
+    }
+    100%{ opacity: 1}
+}
+@keyframes rainbow-2 {
+    0% {
+        color: #ffffff;
+    }
+    20% {
+        color: #0bee6d;
+    }
+    40% {
+        color: #ee0b62;
+    }
+    60% {
+        color: #05daed;
+    }
+    80% {
+        color: #ff0000;
+    }
+    100% {
+        color: #ffffff;
+    }
+
+
+
+}
